@@ -1,0 +1,381 @@
+/* 置頂，導入外部字形設定 */
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* base */
+body {
+  font-family: "Bruno Ace SC", sans-serif;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* outline: solid 1px; */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* top */
+.header {
+  background: #000;
+  color: #d1d1d1;
+  padding: 40px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 32px;
+}
+
+.btn-light {
+  background: white;
+  color: #000;
+}
+
+.btn-dark {
+  background: #000;
+  color: white;
+}
+
+/* banner */
+.banner {
+  background: #000;
+  color: white;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+}
+
+.banner-highlight {
+  display: block;
+  text-align: right;
+  color: #00ffa3;
+}
+
+.banner-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* intro */
+.intro-wrap {
+  background-image: url("img/background-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.intro{
+  justify-content: space-between;
+}
+
+.intro-desc {
+  width: 526px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+/* about */
+.about {
+  padding: 160px 0;
+}
+
+.about-content{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-list {
+  width: 636px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card{
+  width: calc(50% - 12px);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  border: 1px solid #E3E3E3;
+  align-content: center;
+}
+
+.card-detail{
+  font-size: 20px;
+  padding-bottom: 4px;
+}
+
+.about-desc {
+  width: 526px;
+}
+
+/* social */
+.contact {
+  background: linear-gradient(rgba(5, 0, 20, 1), rgba(1, 2, 30, 0.89));
+  padding: 96px 0;
+  color: #fff;
+}
+
+.contact-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-desc{
+  display: flex;
+  align-items: center;
+}
+
+.social-icon{
+  border-radius: 40px;
+  transition: 1s;
+}
+
+.social-icon:hover {
+  box-shadow: 0 0 16px 5px rgba(144, 148, 255, 0.9);
+}
+
+/* project */
+.project {
+  margin: 160px 0;
+}
+
+.project-title{
+  width: 746px;
+  margin-left: auto;
+}
+
+.project-p{
+  width: 636px;
+}
+
+.project-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-2-content{
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+}
+
+/* footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+  align-items: center;
+  text-align: center;
+}
+
+/* utils */
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+
+.h1 {
+  font-size: 128px;
+}
+
+.h2 {
+  font-size: 64px;
+}
+
+.fs-1 {
+  font-size: 32px;
+}
+
+.fs-2 {
+  font-size: 24px;
+}
+
+.fs-3 {
+  font-size: 20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.pd-4{
+  padding-bottom: 4px;
+}
+
+.ptb160{
+  padding: 160px 0px;
+}
+
+.mt-auto{
+ margin-top: auto;
+}
+
+.mr-6 {
+  margin-right: 24px;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.mb-7{
+  margin-bottom: 28px;
+}
+
+.mb-9 {
+  margin-bottom: 36px;
+}
+
+.mr-5 {
+  margin-right: 20px;
+}
+
+.m-160{
+  margin: 160px 0;
+}
