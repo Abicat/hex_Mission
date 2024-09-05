@@ -1,132 +1,6 @@
 /* 置頂，導入外部字形設定 */
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
 
-/* reset */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 /* base */
 body {
   font-family: "Bruno Ace SC", sans-serif;
@@ -163,6 +37,13 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav-item:hover{
+  display: block;
+  color: black;
+  background: white;
+  text-decoration:none; /*去除底線*/
 }
 
 .btn {
@@ -211,12 +92,12 @@ img {
 }
 
 .intro{
+  padding: 160px 0;
   justify-content: space-between;
 }
 
 .intro-desc {
   width: 526px;
-  flex-wrap: wrap;
   margin-bottom: 32px;
 }
 
@@ -253,7 +134,7 @@ img {
   width: 526px;
 }
 
-/* social */
+/* contact */
 .contact {
   background: linear-gradient(rgba(5, 0, 20, 1), rgba(1, 2, 30, 0.89));
   padding: 96px 0;
@@ -270,6 +151,7 @@ img {
   align-items: center;
 }
 
+/* social */
 .social-icon{
   border-radius: 40px;
   transition: 1s;
@@ -285,6 +167,7 @@ img {
 }
 
 .project-title{
+  margin-bottom: 16px;
   width: 746px;
   margin-left: auto;
 }
@@ -296,13 +179,11 @@ img {
 .project-content{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .project-2-content{
   flex-direction: column;
   justify-content: space-between;
-  /* align-items: flex-start; */
 }
 
 /* footer */
@@ -310,72 +191,5 @@ img {
   background-color: #000;
   color: #fff;
   padding: 40px 0;
-  align-items: center;
   text-align: center;
-}
-
-/* utils */
-.container {
-  width: 1296px;
-  margin: 0 auto;
-}
-
-.h1 {
-  font-size: 128px;
-}
-
-.h2 {
-  font-size: 64px;
-}
-
-.fs-1 {
-  font-size: 32px;
-}
-
-.fs-2 {
-  font-size: 24px;
-}
-
-.fs-3 {
-  font-size: 20px;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.pd-4{
-  padding-bottom: 4px;
-}
-
-.ptb160{
-  padding: 160px 0px;
-}
-
-.mt-auto{
- margin-top: auto;
-}
-
-.mr-6 {
-  margin-right: 24px;
-}
-
-.mb-6 {
-  margin-bottom: 24px;
-}
-
-.mb-7{
-  margin-bottom: 28px;
-}
-
-.mb-9 {
-  margin-bottom: 36px;
-}
-
-.mr-5 {
-  margin-right: 20px;
-}
-
-.m-160{
-  margin: 160px 0;
 }

@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W2_個人網頁</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="utilities.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <ul class="container nav">
-            <li>WILLIAM</li>
-            <li>BASED IN TAIWAN</li>
-            <li>CURRENTLY FRONT END </br>
-                ENGINEER AT HEXSCHOOL
+            <li class="nav-item"><a href="#">WILLIAM</a></li>
+            <li class="nav-item"><a href="#">BASED IN TAIWAN</a></li>
+            <li class="nav-item"><a href="#">CURRENTLY FRONT END </br>
+                ENGINEER AT HEXSCHOOL</a>
             </li>
-            <li><a href="#">CONTACT ME</a></li>
+            <li class="nav-item"><a href="nav-item">CONTACT ME</a></li>
         </ul>
     </header>
 
     <!-- banner -->
     <div class="banner">
         <div class="container banner-content">
-            <img src="img/people.png" alt="people" />
+            <img class="mt-18 mb-8 mr-6" src="img/people.png" alt="people" />
             <div>
                 <h1 class="h2">
                     Hi</br>
@@ -32,7 +34,7 @@
                 </h1>
                 <div class="banner-btn">
                     <a href="#" class="btn btn-light">contact me
-                        <img src="img/arrow_outward.png" alt="arrow">
+                        <img src="img/arrow_outward.png" alt="arrow" class="ml-1">
                     </a>
                 </div>
             </div>
@@ -42,14 +44,14 @@
     <!-- intro -->
     <div class="intro-wrap">
         <div class="container d-flex intro">
-          <div class="mr-6 m-160">
+          <div class="mr-6">
             <h2 class="h2 mb-9">Introduction</h2>
             <p class="fs-2 intro-desc">
               Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites
               that provide an optimal user experience.
             </p>
-            <img src="img/sparkle-sm.png" alt="sparkle" />
-            <img src="img/sparkle-sm.png" alt="sparkle" />
+            <img class="mr-4" src="img/sparkle-sm.png" alt="sparkle" />
+            <img class="mr-4" src="img/sparkle-sm.png" alt="sparkle" />
             <img src="img/sparkle-sm.png" alt="sparkle" />
           </div>
           <ul class="d-flex m-160">
@@ -65,25 +67,33 @@
         <div class="container d-flex about-content">
           <ol class="about-list d-flex">
             <li class="card">
+              <h3>
                 <p class="card-detail">01</p>
-                <h3 class="card-detail">Attention to Detail</h3>
+                <p class="card-detail">Attention to Detail</p>
                 <p>Meticulous code analysis and optimization.</p>
-              </li>
-              <li class="card">
+              </h3>
+            </li>
+            <li class="card">
+              <h3>
                 <p class="card-detail">02</p>
-                <h3 class="card-detail">Adaptability</h3>
-                <p>Swift learning of new technologies.</p>
-              </li>
-              <li class="card">
+                <p class="card-detail">Adaptability</p>
+              </h3>
+              <p>Swift learning of new technologies.</p>
+            </li>
+            <li class="card">
+              <h3>
                 <p class="card-detail">03</p>
-                <h3 class="card-detail">Problem Solver</h3>
-                <p>Identifying and resolving issues.</p>
-              </li>
-              <li class="card">
+                <p class="card-detail">Problem Solver</p>
+              </h3>
+              <p>Identifying and resolving issues.</p>
+            </li>
+            <li class="card">
+              <h3>
                 <p class="card-detail">04</p>
-                <h3 class="card-detail">Team Player</h3>
-                <p>Collaborates and shares ideas.</p>
-              </li>
+                <p class="card-detail">Team Player</p>
+              </h3>
+              <p>Collaborates and shares ideas.</p>
+            </li>
             </ol>
             <div class="about-desc">
                 <h2 class="h2 mb-9">About Me</h2>
@@ -100,7 +110,7 @@
     <div class="contact">
       <div class="container contact-content">
         <div class="contact-desc">
-          <h2 class="h2 mr-6">CONTACT ME</h2>
+          <h2 class="h2 mr-4">CONTACT ME</h2>
           <img src="img/trending_flat_black_24dp 1.png"
               alt="trending_flat" class="trending_flat">
         </div>
@@ -128,10 +138,12 @@
     <div class="project">
       <div class="container">
         <h2 class="h2 project-title">My Projects</h2>
-        <div class="d-flex">
-          <div class="mb-6"><img class="mr-6" src="img/project-1.png" alt="" /></div>
+        <div class="d-flex ">
+          <div>
+            <img class="mr-6" src="img/project-1.png" alt="" />
+          </div>
           <div class="project-content">
-            <div class="d-flex mb-6">
+            <div class="d-flex mb-7">
               <img class="mr-6" src="img/project-2.png" alt="project-2" />
               <div class="d-flex project-2-content">
                 <p class="project-p">
@@ -154,9 +166,9 @@
       </div>
     </div>
 
-    <div class="footer">
-      <footer class="container">all rights reserved @hexschool2023</footer>
-    </div>
+    <footer class="footer">
+      <p>all rights reserved @hexschool2023</p>
+    </footer>
 
 </body>
 </html>
