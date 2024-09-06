@@ -1,0 +1,180 @@
+/* 置頂，導入外部字形設定 */
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+/* top */
+.header {
+  background: #000;
+  color: #d1d1d1;
+  padding: 40px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item:hover{
+  display: block;
+  color: black;
+  background: white;
+  text-decoration:none; /*去除底線*/
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 32px;
+}
+
+.btn-light {
+  background: white;
+  color: #000;
+}
+
+.btn-dark {
+  background: #000;
+  color: white;
+}
+
+/* banner */
+.banner {
+  background: #000;
+  color: white;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+}
+
+.banner-highlight {
+  display: block;
+  text-align: right;
+  color: #00ffa3;
+}
+
+.banner-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* intro */
+.intro-wrap {
+  background-image: url("img/background-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.intro{
+  padding: 160px 0;
+  justify-content: space-between;
+}
+
+.intro-desc {
+  width: 526px;
+  margin-bottom: 32px;
+}
+
+/* about */
+.about {
+  padding: 160px 0;
+}
+
+.about-content{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-list {
+  width: 636px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card{
+  width: calc(50% - 12px);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  border: 1px solid #E3E3E3;
+  align-content: center;
+}
+
+.card-detail{
+  font-size: 20px;
+  padding-bottom: 4px;
+}
+
+.about-desc {
+  width: 526px;
+}
+
+/* contact */
+.contact {
+  background: linear-gradient(rgba(5, 0, 20, 1), rgba(1, 2, 30, 0.89));
+  padding: 96px 0;
+  color: #fff;
+}
+
+.contact-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-desc{
+  display: flex;
+  align-items: center;
+}
+
+/* social */
+.social-icon{
+  border-radius: 40px;
+  transition: 1s;
+}
+
+.social-icon:hover {
+  box-shadow: 0 0 16px 5px rgba(144, 148, 255, 0.9);
+}
+
+/* project */
+.project {
+  margin: 160px 0;
+}
+
+.project-title{
+  margin-bottom: 16px;
+  width: 746px;
+  margin-left: auto;
+}
+
+.project-p{
+  width: 636px;
+}
+
+.project-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.project-2-content{
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
